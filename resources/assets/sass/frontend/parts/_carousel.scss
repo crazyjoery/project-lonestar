@@ -1,0 +1,138 @@
+/*------------------------------------------------------------------
+
+  Owl Carousel
+
+-------------------------------------------------------------------*/
+.youplay-carousel.owl-carousel {
+    // remove space between items
+    .angled-img {
+        margin-left: -1px;
+
+        .bottom-info {
+            width: 80%;
+        }
+
+        // fix blinking
+        .over-info,
+        .bottom-info {
+            transform: translateZ(0);
+        }
+    }
+
+    // controls
+    .owl-nav {
+        margin: 0;
+
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            cursor: pointer;
+            font-size: 2rem;
+            top: 0;
+            height: 100%;
+            width: 70px;
+            transition: .3s opacity ease;
+            opacity: 1;
+            margin: 0;
+            padding: 0;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        .owl-prev,
+        .owl-prev:hover {
+            left: 0;
+            background: linear-gradient(to right, $back_darken_color, rgba($back_darken_color, 0));
+        }
+        .owl-next,
+        .owl-next:hover {
+            // no use 0px - added 1px transparent gap
+            right: -0.1px;
+            background: linear-gradient(to left, $back_darken_color, rgba($back_darken_color, 0));
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------
+
+  Default Owl Carousel
+
+-------------------------------------------------------------------*/
+.owl-carousel {
+    .owl-dots {
+        text-align: center;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+    .owl-item .item {
+        transform: translateZ(0);
+    }
+
+    .owl-dot {
+        display: inline-block;
+        width: 40px;
+        height: 8px;
+        margin-left: 15px;
+        margin-top: 5px;
+        transform: skew(-$skew_size);
+        border: 2px solid $text_color;
+        transition: .3s background ease;
+
+        &:hover,
+        &.active {
+            background: $text_color;
+        }
+    }
+
+    .owl-stage-outer {
+        width: 100%;
+    }
+}
+
+
+/*------------------------------------------------------------------
+
+  Owl Slider
+
+-------------------------------------------------------------------*/
+.youplay-slider {
+    // skew for slider wraper
+    > .owl-stage-outer {
+        transform: skew(-$skew_size);
+        .owl-item {
+            transform: skew($skew_size);
+        }
+    }
+
+    .owl-dots {
+        text-align: center;
+        margin-right: 15%;
+        margin-top: -5px;
+        margin-bottom: 5px;
+    }
+
+    .owl-dot {
+        display: inline-block;
+        width: 40px;
+        height: 8px;
+        margin-left: 15px;
+        margin-top: 5px;
+        transform: skew(-$skew_size);
+        border: 2px solid $text_color;
+        transition: .3s background ease;
+
+        &:hover,
+        &.active {
+            background: $text_color;
+        }
+    }
+}
+
+
+/* Fix collision with OWL styles */
+.owl-carousel .owl-dots .owl-dot > span {
+    display: none !important;
+}

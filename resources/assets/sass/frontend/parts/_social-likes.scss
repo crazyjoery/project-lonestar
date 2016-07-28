@@ -1,0 +1,13 @@
+/*------------------------------------------------------------------
+
+  Social Likes
+
+-------------------------------------------------------------------*/
+.social-likes__widget:before,
+.social-likes__widget:after {
+    display: block !important
+}
+.social-likes__button {
+    color: inherit;
+    padding: .04em .7em .18em 1em;
+}

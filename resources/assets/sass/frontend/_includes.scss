@@ -1,0 +1,123 @@
+/*------------------------------------------------------------------
+  [Typography]
+
+  Body copy: 14px/1.42857143 'Lato', sans-serif;
+
+  Notes: All font sizes are relative to the base font size (rem)
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+  [Color codes]
+
+  Main:         #{$main_color} (buttons/links hover)
+  Back:         #{$back_darken_color} (Content Background)
+  Back Images:  #{$back_color} (back on images)
+  Text:         #{$text_color}
+  Muted Text:   #{$text_mute_color}
+
+  Primary:      #{$color_primary}
+  Success:      #{$color_success}
+  Info:         #{$color_info}
+  Warning:      #{$color_warning}
+  Danger:       #{$color_danger}
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+  [Table of contents]
+
+  1. Base
+  2. Helper Classes
+  3. Components
+    - Angled Buttons
+    - Angled Pagination
+    - Progress Bars
+    - Timeline
+    - Accordion
+    - Tabs
+    - Features
+    - Tables
+    - Pager
+    - Labels
+    - Alerts
+    - Modals
+    - Tooltips
+    - Popovers
+    - Angled Images
+    - Angled Backgrounds
+  4. Forms
+    - Input and Textarea
+    - Ratings
+    - Selects
+    - Checkboxes
+    - Radios
+  5. Navbar
+  6. Banner
+  7. Owl Carousel
+  8. Countdown
+  9. Hexagon Rating
+
+  10. Search Block
+  11. Side Bar
+  12. Comments / Review blocks
+
+  13. News
+  14. Store
+  15. Search Page
+  16. User Profile
+  17. Login
+  18. 404
+  19. Forum
+  20. Clan Wars
+  21. Testimonials
+  22. Pricing Table
+
+  23. Instagram
+  24. Twitter
+
+  25. Magnific Popup
+  26. Slider Revolution
+  27. Isotope
+  28. Sweet Alert
+  29. Social Likes
+
+  30. Footer
+  31. Preloader
+-------------------------------------------------------------------*/
+$skew_scale: 1 + abs(strip-units($skew_size)) * 0.014; // YEP, this is magic number
+
+@import "parts/base";
+@import "parts/helper-classes";
+
+@import "parts/components";
+@import "parts/angled-items";
+@import "parts/forms";
+@import "parts/navbar";
+@import "parts/banner";
+@import "parts/carousel";
+@import "parts/countdown";
+@import "parts/hexagon-rating";
+
+@import "parts/search-block";
+@import "parts/side-block";
+@import "parts/comments-block";
+
+@import "parts/news";
+@import "parts/store";
+@import "parts/search-page";
+@import "parts/user-profile";
+@import "parts/login";
+@import "parts/404";
+@import "parts/forum";
+@import "parts/clan-wars";
+@import "parts/testimonials";
+@import "parts/pricing-table";
+
+@import "parts/instagram";
+@import "parts/twitter";
+
+@import "parts/magnific-popup";
+@import "parts/slider-revolution";
+@import "parts/isotope";
+@import "parts/sweet-alert";
+@import "parts/social-likes";
+
+@import "parts/footer";
+@import "parts/preloader";

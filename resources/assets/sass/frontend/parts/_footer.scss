@@ -1,0 +1,147 @@
+/*------------------------------------------------------------------
+
+  Footer
+
+-------------------------------------------------------------------*/
+footer {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    .wrapper {
+        position: relative;
+        background-size: cover;
+    }
+
+    // widgets
+    .widgets {
+        padding-top: 8rem;
+        padding-bottom: 5rem;
+        background: $back_darken_grey_color;
+        background: rgba($back_darken_grey_color, 0.45);
+    }
+
+    // social icons
+    .social {
+        text-align: center;
+        overflow: hidden;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        background: $back_darken_color;
+        background: rgba($back_darken_color, 0.45);
+
+        .container {
+            position: relative;
+        }
+
+        h3 {
+            margin-top: 0;
+            margin-bottom: 4rem;
+        }
+
+        .social-icons {
+            margin: 0 auto;
+            margin-bottom: -4rem;
+            max-width: 750px;
+
+            .social-icon {
+                display: inline-block;
+                margin-bottom: 4rem;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            .social-icon > a {
+                color: inherit;
+                text-decoration: none;
+
+                i {
+                    position: relative;
+                    display: inline-block;
+                    font-size: 5rem;
+                    padding: 25px 40px;
+
+                    &:before {
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 0; left: 0; right: 0; bottom: 0;
+                        background: rgba($back_darken_color, 0.3);
+                        transform: skew(-$skew_size);
+                        transform-origin: 50% 50%;
+                        transition: .3s background ease;
+                    }
+                }
+                span {
+                    display: block;
+                }
+
+                &:hover i:after {
+                    background: rgba($back_darken_color, 0.4);
+                }
+            }
+        }
+
+        // fallback for old youplay before 2.2.1
+        .icons {
+            margin: 0 auto;
+            margin-bottom: 5rem;
+            max-width: 600px;
+
+            a {
+                color: inherit;
+                text-decoration: none;
+
+                i {
+                    position: relative;
+                    display: inline-block;
+                    font-size: 5rem;
+                    padding: 25px 40px;
+
+                    &:before {
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 0; left: 0; right: 0; bottom: 0;
+                        background: rgba($back_darken_color, 0.3);
+                        transform: skew(-$skew_size);
+                        transform-origin: 50% 50%;
+                        transition: .3s background ease;
+                    }
+                }
+                span {
+                    display: block;
+                }
+
+                &:hover i:after {
+                    background: rgba($back_darken_color, 0.4);
+                }
+            }
+
+            // fix on mobile margins
+            @media #{$media-xs} {
+                margin-bottom: 1rem;
+
+                > div {
+                    margin-bottom: 4rem;
+                }
+            }
+        }
+    }
+
+    // copyright
+    .copyright {
+        position: relative;
+        background: $back_darken_color;
+        background: rgba($back_darken_color, 0.7);
+        text-align: center;
+        padding: 30px 10px;
+    }
+}

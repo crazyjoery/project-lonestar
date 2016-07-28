@@ -1,0 +1,14 @@
+.youplay-twitter {
+    > div {
+        margin-top: 2rem;
+        margin-left: 24px;
+
+        .youplay-twitter-icon {
+            width: 24px;
+            font-size: 1.2em;
+            float: left;
+            margin-left: -24px;
+            line-height: 1.1;
+        }
+    }
+}

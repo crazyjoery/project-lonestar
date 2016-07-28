@@ -1,0 +1,35 @@
+{
+  "name": "lonestar",
+  "version": "0.0.1",
+  "description": "Lone Star Warriors Web Platform",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.4",
+    "bootstrap": "~3.3.6",
+    "bootstrap-sweetalert": "~0.4.5",
+    "bootstrap-validator": "~0.10.2",
+    "font-awesome": "~4.6.2",
+    "imagesloaded": "~4.1.0",
+    "isotope": "~3.0.0",
+    "jarallax": "~1.6.3",
+    "jquery.countdown": "~2.1.0",
+    "moment": "~2.13.0",
+    "moment-timezone": "~0.5.4",
+    "magnific-popup": "~1.1.0",
+    "owl.carousel": "~2.1.1",
+    "smoothscroll-for-websites": "~1.4.4",
+    "HexagonProgress": "git://github.com/MaxLawrence/HexagonProgress.git",
+    "social-likes": "git://github.com/sapegin/social-likes.git"
+  }
+}

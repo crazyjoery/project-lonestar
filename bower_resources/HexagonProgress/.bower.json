@@ -1,0 +1,13 @@
+{
+  "name": "HexagonProgress",
+  "homepage": "https://github.com/MaxLawrence/HexagonProgress",
+  "_release": "6f7f76ae4d",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "6f7f76ae4d85b03b95866bda7bb2a42bc14a39b6"
+  },
+  "_source": "git://github.com/MaxLawrence/HexagonProgress.git",
+  "_target": "*",
+  "_originalSource": "git://github.com/MaxLawrence/HexagonProgress.git"
+}

@@ -1,0 +1,131 @@
+/*------------------------------------------------------------------
+
+  Magnific Popup
+
+-------------------------------------------------------------------*/
+.mfp-bg {
+    background: $back_darken_color;
+}
+.mfp-figure:after {
+    box-shadow: 0 0 8px rgba($back_darken_color, 0.6);
+    background: $back_darken_color;
+}
+
+img.mfp-img {
+    padding-top: 65px;
+}
+.mfp-figure:after {
+    top: 65px;
+}
+.mfp-iframe-scaler iframe {
+	top: 20px;
+}
+.mfp-arrow:after {
+    content: none;
+}
+.mfp-arrow-right:before {
+    color: $text_color;
+    border-left-color: $text_color;
+}
+.mfp-arrow-left:before {
+    color: $text_color;
+    border-right-color: $text_color;
+}
+
+
+// Custom preloader
+.mfp-preloader {
+    margin-top: -100px;
+
+    .preloader {
+        margin: 0 auto;
+    }
+}
+
+
+// custom arrows
+.mfp-arrow-right:before,
+.mfp-arrow-left:before {
+    font-family: 'Glyphicons Halflings';
+    content: '\e080';
+    border: none;
+    font-size: 5rem;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.mfp-arrow-left:before {
+    content: '\e079';
+}
+
+// custom close
+button.mfp-close {
+    height: 65px;
+    width: 75px;
+    line-height: 65px;
+    font-size: 0;
+    color: transparent;
+
+    &:before {
+        font-family: 'Glyphicons Halflings';
+        content: '\e014';
+        font-size: 4rem;
+        color: $text_color;
+    }
+}
+
+// controls on hover
+.mfp-close,
+.mfp-arrow {
+    opacity: 0.3;
+    &:before {
+        opacity: 1;
+    }
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+
+// Fade Effect
+.mfp-with-fade {
+  
+    // before-open state
+    .mfp-content,
+    .mfp-arrow,
+    .mfp-close,
+    &.mfp-bg {
+        opacity: 0;
+        -webkit-backface-visibility: hidden;
+        transition: opacity 0.3s ease-out;
+    }
+  
+  
+    // open state
+    &.mfp-ready {
+        .mfp-content {
+            opacity: 1;
+        }
+        .mfp-arrow,
+        .mfp-close {
+            opacity: 0.3;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+        &.mfp-bg {
+            opacity: 0.8; // background opacity
+        }
+    }
+  
+    // closed state
+    &.mfp-removing {
+        .mfp-content,
+        .mfp-arrow,
+        .mfp-close,
+        &.mfp-bg {
+            opacity: 0;
+        }
+    } 
+}

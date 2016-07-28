@@ -1,0 +1,57 @@
+/*------------------------------------------------------------------
+
+  Search Block
+
+-------------------------------------------------------------------*/
+.search-block {
+    position: fixed;
+    display: table;
+    background: $back_darken_color;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+    padding: 4rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s opacity ease, .5s visibility ease;
+
+    // show
+    &.active {
+        opacity: 1;
+        visibility: visible;
+
+        > form {
+            transform: scale(1);
+        }
+    }
+
+    > form {
+        display: table-cell;
+        vertical-align: middle;
+        transform: scale(0.7);
+        transition: .5s transform ease;
+
+        input {
+            font-size: 5rem;
+            padding: 2rem 5rem;
+        }
+    }
+
+    // close icon
+    > .search-toggle {
+        position: absolute;
+        right: 4rem;
+        top: 4rem;
+        text-decoration: none;
+        font-size: 3rem;
+        z-index: 2;
+        text-shadow: 1px 1px 1px $back_darken_color;
+        
+        &,
+        &:hover {
+            color: $text_color;
+        }
+    }
+}

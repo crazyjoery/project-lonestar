@@ -1,0 +1,70 @@
+/*------------------------------------------------------------------
+
+  Hexagon Rating
+
+-------------------------------------------------------------------*/
+.youplay-review-rating {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    border-top: 2px solid rgba($text_color, 0.1);
+    border-bottom: 2px solid rgba($text_color, 0.1);
+    padding: 3rem;
+    padding-top: 0;
+
+    .row > div {
+        padding-top: 3rem;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li > i {
+            margin-right: 3px;
+        }
+    }
+}
+
+// rating hexagon
+.youplay-hexagon-rating {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    cursor: default;
+    user-select: none;
+
+    .news-one .angled-img & {
+        position: absolute;
+        bottom: 15px;
+        left: 10px;
+    }
+
+    > canvas {
+        transform: rotate(30deg);
+    }
+
+    > span {
+        position: absolute;
+        text-align: center;
+        font-weight: bold;
+        font-size: 3.5rem;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        margin-left: -30px;
+        margin-top: -30px;
+        top: 50%;
+        left: 50%;
+    }
+
+    &.youplay-hexagon-rating-small {
+        width: 50px;
+        height: 50px;
+
+        > span {
+            font-size: 1.3rem;
+        }
+    }
+}

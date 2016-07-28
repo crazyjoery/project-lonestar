@@ -1,0 +1,51 @@
+/*------------------------------------------------------------------
+
+  Testimonials
+
+-------------------------------------------------------------------*/
+.testimonials {
+    blockquote {
+        position: relative;
+        background: rgba($text_color, 0.1);
+        min-height: 150px;
+        margin-bottom: 75px;
+        padding: 20px 30px;
+        border: none;
+    }
+
+    blockquote:after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        margin-left: -10px;
+        border-top: 10px solid rgba($text_color, 0.1);
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+    }
+
+    blockquote img {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        bottom: -70px;
+        left: 50%;
+        margin-left: -25px;
+    }
+
+    a,
+    a:hover,
+    a:active,
+    a:focus {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    blockquote p.clients-words {
+        font-size: 14px;
+    }
+    .author-name {
+        font-size: 14px;
+        text-align: right;
+    }
+}

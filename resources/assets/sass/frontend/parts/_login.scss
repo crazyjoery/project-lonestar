@@ -1,0 +1,41 @@
+/*------------------------------------------------------------------
+
+  Login
+
+-------------------------------------------------------------------*/
+.youplay-login {
+
+    // title
+    .youplay-banner .info h2 {
+        font-size: 4rem;
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+
+    .youplay-form {
+        max-width: 500px;
+        margin: 3rem auto;
+
+        form {
+            margin-top: 2rem;
+        }
+
+        input {
+            text-align: center;
+        }
+
+        button {
+            margin: 0;
+            width: 100%;
+        }
+
+        .social-list {
+            margin: 0;
+        }
+    }
+}
+
+.full.youplay-login,
+.full.youplay-login .youplay-banner {
+    min-height: 510px;
+}

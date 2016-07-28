@@ -1,0 +1,119 @@
+/*------------------------------------------------------------------
+
+  Banner
+
+-------------------------------------------------------------------*/
+.no-banner {
+    padding-top: $navbar-height;
+}
+.youplay-banner {
+    position: relative;
+    background: $back_color;
+    min-height: 550px;
+    overflow: hidden;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+
+    @media screen and (min-width:0\0) {
+        height: 0; // fixed IE flex vertical centering
+    }
+
+    // top banner top padding
+    &.banner-top {
+        padding-top: $navbar-height;
+    }
+
+    &.small {
+        min-height: 450px;
+        font-size: inherit;
+    }
+
+    &.xsmall {
+        min-height: 350px;
+    }
+
+    &.big {
+        min-height: 650px;
+    }
+
+    &.full {
+        min-height: 100%;
+    }
+
+    // heading
+    h1, h2 {
+        margin-top: 0;
+    }
+
+    // background parallax image
+    .image {
+        position: absolute;
+        opacity: $banners_opacity;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    // banner info
+    .info {
+        position: relative;
+        width: 100%;
+
+        @media #{$media-xs} {
+            text-align: center;
+        }
+
+        h1, h2 {
+            font-size: 5rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+// full height banner
+.full,
+.full .youplay-banner {
+    height: 100%;
+    min-height: 650px;
+}
+.full {
+    overflow: auto;
+}
+.full .youplay-banner .image {
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+
+// full width banner
+.wide .youplay-banner .image {
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+
+// Jarallax banners
+.youplay-banner-parallax.youplay-banner .image {
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: initial;
+}
+.youplay-banner-parallax.youplay-banner.banner-top .image {
+    background-position: 50% 0;
+}

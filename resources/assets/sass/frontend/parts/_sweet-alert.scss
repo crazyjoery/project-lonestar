@@ -1,0 +1,27 @@
+/*------------------------------------------------------------------
+
+  Sweet Alert
+
+-------------------------------------------------------------------*/
+.sweet-alert {
+    background-color: $back_darken_color;
+    color: inherit;
+
+    .btn:focus,
+    .btn.focus {
+        box-shadow: none;
+    }
+
+    .icon.success:before,
+    .icon.success:after,
+    .icon.success .fix {
+        background: $back_darken_color;
+    }
+
+    .lead {
+        color: #fff;
+    }
+}
+.sweet-overlay {
+    background-color: rgba($back_darken_color, 0.7);
+}
